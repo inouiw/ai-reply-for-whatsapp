@@ -1,0 +1,22 @@
+{
+  "name": "ai-reply-for-whatsapp",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/shared",
+    "server",
+    "app"
+  ],
+  "scripts": {
+    "server": "npm run dev --workspace server",
+    "app": "npm run start --workspace app",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "allowScripts": {
+    "baileys@7.0.0-rc13": true,
+    "better-sqlite3@13.0.1": true,
+    "protobufjs@7.6.5": true,
+    "esbuild@0.28.1": true,
+    "fsevents@2.3.3": true
+  }
+}
