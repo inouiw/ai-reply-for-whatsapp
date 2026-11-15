@@ -90,7 +90,7 @@ export default function InboxScreen() {
             />
           }
           ListEmptyComponent={
-            isLoading ? null : (
+            isLoading ? undefined : (
               <View style={styles.center}>
                 <Text style={styles.empty}>
                   No messages yet.{"\n"}New WhatsApp messages will appear here.
